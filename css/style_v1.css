@@ -1,0 +1,171 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/*aggiunti fonts da google fonts */
+body {
+  font-family: 'Gotu', sans-serif;
+}
+
+nav .brand-logo {
+  font-family: 'Indie Flower', cursive;
+}
+
+/*aggiunti spazi a dx e sx */
+nav .nav-wrapper {
+    padding: 0 50px;
+}
+
+
+nav ul a,
+nav .brand-logo {
+  color: #0c0c0c;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #ef5350;
+}
+
+
+.parallax-container {
+  min-height: 400px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+ 
+ .section-intro {
+    width: 100%;
+    height: 100%;
+  }
+
+/*aggiunta classe header con margine sopra */
+.header {
+  margin-top: 5%;
+} 
+
+.header-subtitle {
+  margin-top: 5%;
+  font-size: 1.2em;
+  font-weight: bold;
+} 
+
+
+.btn-large{
+  width: 100%; /*con 100% viene uguale al >div> in cui si trova */
+  max-width: 450px; /*settare massima larghezza */
+  height: auto;
+  margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  
+/*RESPONSIVE */
+  .nav-wrapper {
+    padding: 0 10px;
+  }
+
+}
+
+.col-claims {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+/*si richiama l'id univoco claims e si speciica qualcosa per i soli elementi di h5 */
+#claims h5 {
+  line-height: 1.5em;
+}
+
+#topics h3 {
+  margin-top: 10px;
+}
+
+.section-topics {
+    width: 100%;
+    height: 100%;
+  }
+
+
+.btn-topics{
+  width: 100%; /*con 100% viene uguale al >div> in cui si trova */
+  height: 3rem;
+  margin-top: 10px;
+}
+
+.icon-list {
+  font-size: 7em;
+  margin-top: 0px;
+}
+
+.col-offering {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+#offering h5 {
+  line-height: 1.5em;
+}
+
+.section-register {
+    width: 100%;
+    height: 100%;
+  }
+
+.icon-register {
+  font-size: 7em;
+  margin-top: 0px;
+}
+
+.btn-register{
+  width: 100%; /*con 100% viene uguale al >div> in cui si trova */
+  height: 3rem; 
+}
+
+
+footer.page-footer {
+  margin: 0;
+  background-color: #003459;
+}
+
+
+.icon-social,
+.icon-bio {
+  font-size: 2em;
+  color: #fff;
+  padding: 0 20px; /*0 è per sopra e sotto, mentre 20 per dx e sx */
+}
+
+.icon-social:hover {
+color: #ef5350;
+}
